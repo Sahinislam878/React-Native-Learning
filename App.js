@@ -2,6 +2,8 @@
 import react from "react";
 import CustomComponent from "./src/screens/CustomComponent";
 
+import FirstChallenge from "./firstChallenge";
+
 import { Text, StyleSheet , View } from 'react-native'
 
 // Create a component that return some jsx / simple function
@@ -19,10 +21,10 @@ const App = () => {
   {myElement}
   <Text> Hii, {getFullName("Sahin", "Islam")} </Text>
 
-
-  <Text style = {style.s1}>Welcome To Sahin </Text>
+    <FirstChallenge/>
+ 
   </View>
-  )
+  );
 };
 
 //Create a StyleSheet to Style the components
@@ -32,11 +34,8 @@ const style = StyleSheet.create({
   textStyle :{
     color: "red",
     marginTop: 100,
-  },
-  s1 : {
-   fontSize: 40, fontWeight : "bold"
-    
   }
+
 });
 
 //Export the file, so that we can use it elsewhere in our app
